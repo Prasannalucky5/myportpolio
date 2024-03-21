@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    
+    <script src="portfolio.js"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" alt="" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>JAVA FULLSTACK DEVELOPER</p>
+                <h3>Hi!!, I'm LaxmiPrasanna</h3>
+            </div>
+        </div>
+
+    </div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1><br/>
+                <p>A hard working individual looking for a challenging position where I can showcase my skills and contribute to the growth of the organization.</p>
+
+                <div class="tab-titles">
+                   
+                   
+                </div>
+                <div class="tab-contents active-tab">
+                    <h1 class="tab-links active_link">Skills:</h1>
+                    <ul>
+                        
+                        <li><span>Frontend</span><br/>(HTML,CSS3,JAVAScript)</li>
+                        <li><span>Backend</span><br/>(core java, JDBC, servlet, python(basics))</li>
+                        <li><span>Database</span><br/>(oracle and MySQL)</li>
+                        <li><span>Software Testing<br/>(Blackbox testing, Whitebox Testing)</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents">
+                    <p class="tab-links">Education:</p>
+                    <ul>
+                        
+                        <li><span>2019-2023</span><br/>Sumathi Reddy Institute of Technology for Women<br/>Electrical and Electronics Engineering(B.Tech)</li>
+                        <li><span>2017-2019</span><br/>SR Junior college<br/>Intermediate in MPC </li>
+                        <li><span>2016-2017</span><br/>Vivekananda Model high School<br/> SSC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="certifications">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="services-list">
+            <div>
+                <h2 class="certi">AWS Academy</h2><br>
+                <p class="certi">Successfull completition of Engineering operations Technician</p><br/>
+                <h2>Software Testing</h2><br/>
+                <p>Successfull completition of software testing from the reputed Institute<br/>besant technologies</p><br/>
+                <h2>Electric Locomotive</h2><br/>
+                <p>Successfully completed the Study of WAG-7, WAG-9 electric locomotive at Electric loco shed </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="portpolio.png" alt="">
+                <div class="layer">
+                    <h4>portfolio</h4>
+                </div>
+            </div>
+            <div class="work">
+                <img src="forms.png" alt="">
+                <h4>Registration forms</h4>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fa-solid fa-envelope"></i> prasannakandakatla535@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 91+9959784335</p><br/>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kandakatla-laxmi-prasanna-36bb56249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">.<i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/laxmi_prasannaaa?utm_source=qr&igsh=eWtiY3Z4czI3c2xq">.<i class="fa-brands fa-instagram"></i></a><br>
+                    <a href="Prasanna.resume (1).docx"><button class="butn">view CV</button></a>
+                </div>
+            </div><br>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email id" required>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwC3Hj164U5ivTk4jSu5HJeW3lvugfzlpWWMrXzlGDXUrdjlFgalZSlINcZ89a8q2ef7A/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
