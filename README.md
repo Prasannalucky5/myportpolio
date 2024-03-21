@@ -1,4 +1,5 @@
 # myportpolio
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -96,6 +97,10 @@
             <div class="work">
                 <img src="forms.png" alt="">
                 <h4>Registration forms</h4>
+            </div>
+            <div class="work">
+                <img src="calculator.jpg" alt="">
+                <h4>Simple calculator</h4>
             </div>
             
         </div>
